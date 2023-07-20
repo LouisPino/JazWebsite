@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    
+    <!-- Scroll bar -->
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+
+    <!-- Nav Bar -->
+<section class="navbar">
+    <div class="container">
+    <div class="name"><a class='link' href="index.html">JAZ TSUI</a></div>
+    <nav>
+        <ul class="seconday-navs">
+            <li class="nav-tab" id="about"> <a class="here" href="about.html">ABOUT</a></li>
+            <li class="nav-tab" id="ensembles"><a class="link" href="/ensembles.html">ENSEMBLES</a></li>
+            <li class="dropbtn works nav-tab">WORKS</button>
+                <div class="dropdown-content">
+                  <a class='link' href="/compositions.html">Compositions</a>
+                  <a class='link' href="/multimedia.html">Multimedia</a>
+                  <a class='link' href="/percussion.html">Percussion</a>
+                  <a class='link' href="/video-art.html">Video Art</a>
+                </div>
+        </ul>
+    </nav>
+</div>
+</section>
+
+<!-- hero -->
+<section class="hero">
+<div class="container">
+        <div class="bio">
+            <p> <span class="here heavy">Jasmine Tsui</span> is an interdisciplinary artist, specializing in percussion performance. They have received both the SSHRC Canada Graduate Scholarship and the Ontario Graduate Scholarship for their research on how interdisciplinary pedagogy has the potential to alter and enhance the learning and performance of percussion-theatre works. Through the TaPIR research lab, Jasmine will continue to build upon their foundation of interdisciplinary art practices with the integration of live-processed electronics. Their most recent project, Acrylic Noise, incorporated the use of a MUGIC motion sensor to process the physical movement of abstract painting to create an interactive soundscape. Moving forward, Jasmine hopes to create a work using the Arduino Uno, a MUGIC motion sensor, and several electric fans. 
+            </p>
+        </div>
+                <img id='final-form' src="assets/finalform.jpeg">
+            </div>
+        </section>
+    
+
+
+
+<!-- contact -->
+
+
+
+<!-- footer -->
+<div class="container"> 
+    <section class="footer">
+        <div class="socials">
+            <a href="https://www.instagram.com/je.suis.jaz.tsui/" target="_blank">
+                <img src="assets/IG.png" alt="" class="social clickable ig"></a>
+                <a href="mailto:jasmine.j.tsui@gmail.com" target="_blank">
+                    <img src="assets/Jaz Tsui_files/3kont8jsnkkjm5cf18nbi6f6gc.png" class="social clickable mail link"></a>
+        </div>
+    <div class="footer-text here">Website by Jaz Tsui and Louis Pino</div>
+    </section>
+</div>
+<script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+	window.onscroll = function () {
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+	}
+
+    
+</script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+        <!-- Scroll bar -->
+<div id="progressbar"></div>
+<div id="scrollpath"></div>
+    <!-- Nav Bar -->
+    <section class="navbar">
+        <div class="container">
+        <div class="name"><a class='link' href="index.html">JAZ TSUI</a></div>
+        <nav>
+            <ul class="seconday-navs">
+                <li class="nav-tab" id="about"> <a class="link" href="about.html">ABOUT</a></li>
+                <li class="nav-tab" id="ensembles"><a class="link" href="/ensembles.html">ENSEMBLES</a></li>
+                <li class="dropbtn here works here nav-tab">WORKS</button>
+                    <div class="dropdown-content">
+                      <a class='link' href="/compositions.html">Compositions</a>
+                      <a class='link' href="/multimedia.html">Multimedia</a>
+                      <a class='link' href="/percussion.html">Percussion</a>
+                      <a class='link' href="/video-art.html">Video Art</a>
+                    </div>
+            </ul>
+        </nav>
+    </div>
+    </section>
+
+<!-- content -->
+<section class="ensembles">
+    <div class="container">
+        <h2 class="here page-title">MULTIMEDIA</h2>
+        <div class="ensemble">
+            <h1 class="ens-name" id="cic">SONIC CANVAS</h1>
+            <iframe class='embedded' id='canvas' width="1280" height="720" src="https://www.youtube.com/embed/MAkIPuBWhNs" title="Sonic Canvas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p class='vid-bio'>CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS CANVAS </p>
+        </div>
+
+        <div class="think-fast">
+            <h1 class="ens-name" id="think">THINK FAST!</h1>
+            <img class="ens-photo" src="assets/trevor.jpeg" alt="">
+            <p  class='ens-bio'>TREVOR TREVOR TREVOR TREVOR TREVOR TREVOR TREVOR</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer -->
+<div class="container"> 
+    <section class="footer">
+        <div class="socials">
+            <a href="https://www.instagram.com/je.suis.jaz.tsui/" target="_blank">
+                <img src="assets/IG.png" alt="" class="social clickable ig"></a>
+                <a href="mailto:jasmine.j.tsui@gmail.com" target="_blank">
+                    <img src="assets/Jaz Tsui_files/3kont8jsnkkjm5cf18nbi6f6gc.png" class="social clickable mail link"></a>
+        </div>
+    <div class="footer-text here">Website by Jaz Tsui and Louis Pino</div>
+    </section>
+</div>
+<script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+	window.onscroll = function () {
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+	}
+
+    
+</script>
+</body>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jaz Tsui</title>
+	
+<link rel="stylesheet" type="text/css" href="./Jaz Tsui_files/style.css"></head>
+<body>
+    <!-- Scroll bar -->
+<div id="progressbar" style="height: 0%;"></div>
+<div id="scrollpath"></div>
+
+<!-- Nav Bar -->
+<section class="navbar">
+        <div class="container">
+        <div class="name"><a class="link here" href="http://127.0.0.1:5500/index.html">JAZ TSUI</a></div>
+        <nav>
+            <ul class="seconday-navs">
+                <li class="nav-tab" id="about"> <a class="link" href="http://127.0.0.1:5500/about.html">ABOUT</a></li>
+                <li class="nav-tab" id="ensembles"><a class="link" href="http://127.0.0.1:5500/ensembles.html">ENSEMBLES</a></li>
+                <li class="dropbtn link nav-tab">WORKS
+                    <div class="dropdown-content">
+                      <a class="link" href="http://127.0.0.1:5500/compositions.html">Compositions</a>
+                      <a class="link" href="http://127.0.0.1:5500/multimedia.html">Multimedia</a>
+                      <a class="link" href="http://127.0.0.1:5500/percussion.html">Percussion</a>
+                      <a class="link" href="http://127.0.0.1:5500/video-art.html">Video Art</a>
+                    </div>
+            </li></ul>
+        </nav>
+    </div>
+    </section>
+
+<!-- Hero -->
+<div class="container">
+<section class="hero">
+    <div class="tagline">
+        <h2 class="tag-line" id="bright">BRIGHT</h2>
+        <h2 class="tag-line" id="noise">NOISE</h2>
+        <h2 class="tag-line" id="loud">LOUD</h2>
+        <h2 class="tag-line" id="colors">COLORS</h2>
+    </div>
+        <div class="shapes">
+            <img id="shape-img" src="./Jaz Tsui_files/Shapes.png">
+            <img id="jaz-gif" src="./Jaz Tsui_files/JazGif.gif">
+        </div>
+</section>
+</div>
+
+
+<!-- Panels -->
+<div class="container">
+    <section class="panels">
+    <a href="http://127.0.0.1:5500/multimedia.html"><div class="panel multimedia-panel"><p id="multimedia">MULTIMEDIA</p></div></a>
+    <a href="http://127.0.0.1:5500/percussion.html"><div class="panel percussion-panel" id="percussion">PERCUSSION</div></a>
+    <a href="http://127.0.0.1:5500/compositions.html"><div class="panel compositions-panel" id="compositions">COMPOSTITIONS</div></a>
+    <a href="http://127.0.0.1:5500/video-art.html"><div class="panel video-art-panel" id="video-art">VIDEO ART</div></a>
+    </section>
+</div>
+
+<!-- footer -->
+<div class="container"> 
+    <section class="footer">
+        <div class="socials">
+            <a href="https://www.instagram.com/je.suis.jaz.tsui/" target="_blank">
+                <img src="./Jaz Tsui_files/IG.png" alt="" class="social clickable ig link"></a>
+            <a href="mailto:jasmine.j.tsui@gmail.com" target="_blank">
+            <img src="./Jaz Tsui_files/mail-logo.svg" class="social clickable mail link"></a>
+        </div>
+    <div class="footer-text link">Website by Jaz Tsui and Louis Pino</div>
+    </section>
+</div>
+
+<script type="text/javascript">
+	let progress = document.getElementById('progressbar');
+	let totalHeight = document.body.scrollHeight - window.innerHeight;
+	window.onscroll = function () {
+		let progressHeight = (window.pageYOffset / totalHeight) * 100;
+		progress.style.height = progressHeight + "%";
+	}
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+</body></html>
