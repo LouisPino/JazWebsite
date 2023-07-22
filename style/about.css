@@ -5,7 +5,6 @@
 }
 * {
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 body {
@@ -21,6 +20,11 @@ body {
   justify-content: space-between;
 }
 
+.secondary-navs {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name {
   font-size: 3em;
 }
@@ -28,6 +32,7 @@ body {
 .nav-tab {
   display: inline;
   text-decoration: none;
+  margin-right: 2rem;
   font-size: 1.5em;
 }
 
@@ -166,7 +171,7 @@ body {
   .secondary-navs {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     text-align: center;
     margin: 0 auto;
     align-content: center;
