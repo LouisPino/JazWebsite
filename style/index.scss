@@ -37,9 +37,10 @@ nav{
 	margin-left: 50px;
 	text-decoration: none;
 	font-size: 1.5em;
-	margin-right: 5rem;
 }
-
+nav{
+margin-right: 5rem;
+}
 .navbar::after{
 	content:'';
 	display: table;
@@ -147,7 +148,6 @@ color: white;
 	height: 100%;
 	width: 60%;
 	position: relative;
-	background-color: purple;
 }
 
 #shape-img{
@@ -160,10 +160,16 @@ color: white;
 #jaz-gif{
 	position: absolute;
 	width: 60%;
-	height: 90%;
+	//height: 90%;
 	border-radius: 50%;
-	left: 20%;
-	top: 5%;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:auto;
+	margin-bottom:auto;
 }
 
 .panels{
@@ -355,3 +361,24 @@ p{display: inline;
 
 
 
+
+
+@media screen and (max-width: 861px){
+ #shape-img{display: none}
+ .tagline-link{
+	color: transparent;
+	text-decoration: none;
+   background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+   animation: animate 5s linear infinite;
+   background-clip: text;
+   -webkit-background-clip: text;
+  transition: 1250ms;
+ }
+}
+
+
+@media screen and (max-width: 1110px){
+	.nav-tab{
+		margin-left: 5px;
+	}
+}
