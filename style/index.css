@@ -12,7 +12,7 @@ body {
   padding: 0;
   background: rgb(24, 24, 24);
   color: #f570ff;
-  font-family: "Comic Sans MS", "Comic Sans", serif;
+  font-family: "Cormorant", serif;
   display: flex;
   flex-direction: column;
 }
@@ -67,7 +67,6 @@ nav {
   animation: 5s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: 400;
 }
 
 .link:hover {
@@ -377,6 +376,6 @@ p {
 }
 @media screen and (max-width: 1110px) {
   .nav-tab {
-    margin-left: 5px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=index.css.map */

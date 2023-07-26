@@ -15,8 +15,8 @@ body {
   padding: 0;
   background: rgb(24, 24, 24);
   color: #f570ff;
-  //	font-family: 'Cormorant', serif;
-  font-family: "Comic Sans MS", "Comic Sans", serif;
+  	font-family: 'Cormorant', serif;
+  // font-family: "Comic Sans MS", "Comic Sans", serif;
 }
 
 .navbar {
@@ -112,19 +112,22 @@ body {
 
 .hero {
   display: flex;
+  justify-content: space-around;
+  align-items: start;
 }
 
-
 #final-form {
-  width: 40%;
-  float: right;
+  width: 80vmin;
+  height: 80vmin;
 }
 
 .bio {
   color: #f570ff;
-  float: left;
-  width: 40%;
   font-size: 2em;
+  width: 50%;
+  margin-left: 2rem;
+
+  p{margin: 0}
 }
 
 .footer {
@@ -243,3 +246,16 @@ body {
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
 }
+
+
+@media screen and (max-width: 1000px){
+.hero{
+  flex-direction: column;
+}
+.bio{
+  margin: 4rem auto;
+}
+#final-form{margin: 0 auto}
+}
+
+
