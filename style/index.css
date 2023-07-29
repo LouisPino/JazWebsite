@@ -317,7 +317,10 @@ p {
     align-content: center;
   }
   .dropdown-content {
-    margin-left: -17px;
+    width: 100vw;
+    font-size: 2.5rem;
+    position: absolute;
+    left: -150px;
   }
   .navbar {
     flex-direction: column;
@@ -325,9 +328,10 @@ p {
   }
   #hamburger-div {
     display: block;
+    width: 50px;
   }
   #hamburger-div .hamburger {
-    width: 100%;
+    width: 50px;
   }
   #shape-img {
     display: none;

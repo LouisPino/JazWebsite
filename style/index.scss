@@ -314,7 +314,10 @@ max-height: 50px;
     align-content: center;
   }
 .dropdown-content{  
-  margin-left: -17px;
+  width: 100vw;
+  font-size: 2.5rem;
+  position: absolute;
+  left: -150px;
 }
   
   .navbar{
@@ -324,9 +327,10 @@ max-height: 50px;
   
   #hamburger-div{
     display: block;
+    width: 50px;
 
     .hamburger{
-      width: 100%;
+      width: 50px;
     }
   }
 
