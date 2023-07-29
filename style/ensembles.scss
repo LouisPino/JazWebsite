@@ -13,7 +13,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
   background-size: cover;
   color: #f570ff;
   font-family: "Cormorant", serif;
@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 section h2 {
   font-size: 2.5em;
@@ -65,7 +64,6 @@ p {
   margin-left: 50px;
 }
 
-
 /* The container <div> - needed to position the dropdown content */
 .dropbtn {
   position: relative;
@@ -77,7 +75,7 @@ p {
   display: none;
   position: absolute;
   left: -40px;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, 0.8);
   min-width: 160px;
   min-height: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -156,11 +154,10 @@ p {
   height: 40px;
 }
 
-.footer-text{
+.footer-text {
   font-size: 1.5rem;
   margin-bottom: 2rem;
-  }
-  
+}
 
 //////////////////////////////////////////////////////////////////////Responsiveness///////////
 @media screen and (max-width: 1350px) {
@@ -178,9 +175,13 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-nav{display: none}
-.name{margin: 0 auto;
-text-align: center;}
+  nav {
+    display: none;
+  }
+  .name {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 450px) {
   #name {
@@ -296,7 +297,6 @@ text-align: center;}
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
 }
-
 
 //////////////////////////////////////////////////////////////////////Rainbow///////////
 .link {

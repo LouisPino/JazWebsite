@@ -65,15 +65,15 @@ p {
   margin-left: 50px;
 }
 
-#hamburger-div{
-display: none;
-width: 50px;
-height: 50px;
-text-align: center;
+#hamburger-div {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
-.hamburger{
+.hamburger {
   max-width: 50px;
-max-height: 50px;
+  max-height: 50px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -209,8 +209,8 @@ max-height: 50px;
   display: inline-block;
   position: relative;
   width: 40%;
-  height: 15em;
-  margin: 0.5em 4%;
+  height: 20em;
+  margin: 1% 4%;
   text-align: center;
   font-size: 2em;
   min-width: 500px;
@@ -309,28 +309,28 @@ max-height: 50px;
     display: none;
   }
 
-  .dropbtn{
+  .dropbtn {
     display: flex;
     flex-direction: column;
     align-content: center;
   }
-.dropdown-content{  
-  width: 100vw;
-  font-size: 2.5rem;
-  left: 0;
-}
-  
-  .navbar{
+  .dropdown-content {
+    width: 100vw;
+    font-size: 2.5rem;
+    left: 0;
+  }
+
+  .navbar {
     flex-direction: column;
     align-items: center;
   }
-  
-  #hamburger-div{
+
+  #hamburger-div {
     display: block;
     width: 100vw;
     margin: 0 auto;
 
-    .hamburger{
+    .hamburger {
       width: 50px;
     }
   }

@@ -32,7 +32,6 @@ body {
 
 .name {
   font-size: 5em;
-  margin-left: -50px;
 }
 
 .nav-tab {
@@ -41,6 +40,18 @@ body {
   margin-right: 2rem;
   font-size: 2em;
   margin-left: 50px;
+}
+
+#hamburger-div {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.hamburger {
+  max-width: 50px;
+  max-height: 50px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -140,17 +151,6 @@ body {
   .navbar {
     flex-direction: column;
   }
-  .secondary-navs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    margin: 0 auto;
-    align-content: center;
-  }
-  .nav-tab {
-    display: block;
-  }
   .link {
     color: transparent;
   }
@@ -181,8 +181,29 @@ body {
     text-align: center;
     min-width: 6px;
   }
-  .secondary-navs {
+  nav {
     display: none;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .dropbtn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .dropdown-content {
+    width: 100vw;
+    font-size: 2.5rem;
+    left: 0;
+  }
+  #hamburger-div {
+    display: block;
+    width: 100vw;
+  }
+  #hamburger-div .hamburger {
+    width: 50px;
   }
   .social {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);

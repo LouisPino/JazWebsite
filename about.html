@@ -12,30 +12,46 @@
     <div id="scrollpath"></div>
 
     <!-- Nav Bar -->
-    <div class="navcon">
+
       <section class="navbar">
         <div class="name">
           <a class="here" href="index.html">JAZ TSUI</a>
         </div>
+        <div class="dropbtn" id="hamburger-div">
+          <img
+            class="hamburger"
+            src="assets/hamburger-menu-icon-svg-16.jpg"
+            alt=""
+          />
+          <div class="dropdown-content">
+            <a class="here" href="about.html">About</a>
+            <a class="here" href="ensembles.html">Ensembles</a>
+            <a class="here" href="compositions.html">Composition</a>
+            <a class="here" href="multimedia.html">Multimedia</a>
+            <a class="here" href="percussion.html">Percussion</a>
+            <a class="here" href="video-art.html">Video Art</a>
+          </div>
+        </div>
         <nav>
           <ul class="seconday-navs">
             <li class="nav-tab" id="about">
-              <a class="here" href="about.html">ABOUT</a>
+              <a class="link" href="about.html">ABOUT</a>
             </li>
             <li class="nav-tab" id="ensembles">
               <a class="link" href="ensembles.html">ENSEMBLES</a>
             </li>
-            <li class="dropbtn works nav-tab">WORKS</button>
-            <div class="dropdown-content">
-              <a class="link" href="compositions.html">Composition</a>
-              <a class="link" href="multimedia.html">Multimedia</a>
-              <a class="link" href="percussion.html">Percussion</a>
-              <a class="link" href="video-art.html">Video Art</a>
-            </div>
+            <li class="dropbtn works nav-tab">
+              WORKS
+              <div class="dropdown-content">
+                <a class="link" href="compositions.html">Composition</a>
+                <a class="link" href="multimedia.html">Multimedia</a>
+                <a class="link" href="percussion.html">Percussion</a>
+                <a class="link" href="video-art.html">Video Art</a>
+              </div>
+            </li>
           </ul>
         </nav>
       </section>
-    </div>
 
     <!-- hero -->
     <section class="hero">
@@ -81,6 +97,19 @@
         let progressHeight = (window.pageYOffset / totalHeight) * 100;
         progress.style.height = progressHeight + "%";
       };
+
+      const dropbtnContentEl = document.querySelector(".dropdown-content");
+      const hamburgerEl = document.querySelector(".hamburger");
+      hamburgerEl.addEventListener("click", showBurger);
+
+      function showBurger() {
+        console.log(dropbtnContentEl.style.display);
+        if (dropbtnContentEl.style.display === "block") {
+          dropbtnContentEl.style.display = "none";
+        } else {
+          dropbtnContentEl.style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
