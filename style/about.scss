@@ -14,7 +14,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: url('/assets/glitter.gif') no-repeat center center;
+  background: black;
   color: #f570ff;
   font-family: "Cormorant", serif;
   display: flex;
@@ -38,6 +38,7 @@ body {
 
 .name {
   font-size: 5em;
+  margin-left: -50px;
 }
 
 .nav-tab {
@@ -60,7 +61,7 @@ body {
   display: none;
   position: absolute;
   left: -40px;
-  background: rgb(24, 24, 24);
+  background: rgba(0, 0, 0, .8);
   min-width: 160px;
   min-height: 190px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -107,7 +108,7 @@ body {
 .footer {
   text-align: center;
   width: 25%;
-  margin: 0 auto;
+  margin: 2rem auto;
   min-width: 139px;
 }
 
@@ -126,6 +127,11 @@ body {
 .mail {
   margin-bottom: 15px;
   height: 40px;
+}
+
+.footer-text{
+font-size: 1.5rem;
+margin-bottom: 2rem;
 }
 
 
