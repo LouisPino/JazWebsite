@@ -268,7 +268,7 @@ p {
   filter: blur(30px);
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1350px) {
   .ensemble {
     flex-direction: column;
     align-items: center;
@@ -277,5 +277,40 @@ p {
     width: 70vw;
     margin: 0;
     text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .name {
+    display: block;
+    text-align: center;
+    min-width: 6px;
+  }
+  .ensembles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ensemble {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ens-name {
+    font-size: 3rem;
+  }
+  .social {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
+  }
+  .ens-bio {
+    font-size: 1.4rem;
+    padding: 3rem;
+  }
+  .mail {
+    width: 3rem;
+    height: 2rem;
+  }
+  .ig {
+    width: 2rem;
+    height: 2rem;
   }
 }/*# sourceMappingURL=percussion.css.map */
