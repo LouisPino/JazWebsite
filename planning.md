@@ -1,16 +1,11 @@
 ## Main page
+### mobile
 - Hamburger menu all items
 - Remove tagline, center Gif
 - Center panels, automatically hover
 
 
-
-## About
+## Secondaries
 - Hamburger menu all items
-
-
-
-## Ensembles
-- Hamburger menu all items
-
-## Perc
+- About page header weird
+- dropdowns fucked when lis are glowing

@@ -280,10 +280,16 @@ p {
   }
 }
 @media screen and (max-width: 1350px) and (max-width: 450px) {
-  .name {
+  #name {
     display: block;
     text-align: center;
     min-width: 6px;
+    color: transparent;
+    text-decoration: none;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
   .ensembles {
     display: flex;

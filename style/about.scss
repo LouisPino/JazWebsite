@@ -38,6 +38,7 @@ body {
     text-decoration: none;
     margin-right: 2rem;
     font-size: 1.5em;
+    margin-left: 50px;
   }
 
 
@@ -109,7 +110,6 @@ body {
 .dropbtn:hover .dropdown-content {
   display: block;
 }
-
 .hero {
   display: flex;
   justify-content: space-around;
@@ -171,9 +171,25 @@ body {
 
 
 @media screen and (max-width: 460px) {
-    .name {
-      text-align: center;
-    }
+  #name{
+    display: block;
+    text-align: center;
+    min-width: 6px;
+    color: transparent;
+    text-decoration: none;
+    background: linear-gradient(
+      90deg,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      purple
+    );
+    animation: animate 5s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+      }
     .navbar {
       //hamburger
       flex-direction: column;
