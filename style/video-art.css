@@ -7,6 +7,29 @@
   box-sizing: border-box;
 }
 
+section {
+  padding: 50px;
+}
+
+section h2 {
+  font-size: 2.5em;
+  color: #f570ff;
+}
+
+section h1 {
+  font-size: 2em;
+  color: #f570ff;
+}
+
+.heavy {
+  font-size: 1.3em;
+}
+
+p {
+  display: inline;
+  color: #f570ff;
+}
+
 body {
   height: 100vh;
   margin: 0;
@@ -16,12 +39,6 @@ body {
   font-family: "Cormorant", serif;
   display: flex;
   flex-direction: column;
-}
-
-.navbar::after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .name {
@@ -40,44 +57,6 @@ nav {
   margin-left: 50px;
   text-decoration: none;
   font-size: 1.5em;
-}
-
-.link {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  animation: animate 5s linear infinite;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: 1250ms;
-}
-
-.works {
-  color: white;
-}
-
-.works:hover {
-  color: transparent;
-  text-decoration: none;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  animation: 5s linear infinite;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: 400;
-}
-
-.link:hover {
-  color: transparent;
-  transition: 400ms;
-}
-
-.here {
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  animation: animate 5s linear infinite;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-decoration: none;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -109,14 +88,6 @@ nav {
 /* Show the dropdown menu on hover */
 .dropbtn:hover .dropdown-content {
   display: block;
-}
-
-.page-title {
-  display: block;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 4em;
-  margin: 0 auto;
 }
 
 .ensembles {
@@ -188,32 +159,94 @@ nav {
   height: 4rem;
 }
 
-.embedded {
-  display: block;
-  margin: 0 auto;
+@media screen and (max-width: 1350px) {
+  .ensemble {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ens-bio {
+    width: 70vw;
+    margin: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1350px) and (max-width: 450px) {
+  #name {
+    display: block;
+    text-align: center;
+    min-width: 6px;
+    color: transparent;
+    text-decoration: none;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  .ensembles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ensemble {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ens-name {
+    font-size: 3rem;
+  }
+  .social {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
+  }
+  .ens-bio {
+    font-size: 1.4rem;
+    padding: 3rem;
+  }
+  .mail {
+    width: 3rem;
+    height: 2rem;
+  }
+  .ig {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 1250ms;
 }
 
-section {
-  padding: 50px;
+.works {
+  color: white;
 }
 
-section h2 {
-  font-size: 2.5em;
-  color: #f570ff;
+.works:hover {
+  color: transparent;
+  text-decoration: none;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: 400;
 }
 
-section h1 {
-  font-size: 2em;
-  color: #f570ff;
+.link:hover {
+  color: transparent;
+  transition: 400ms;
 }
 
-.heavy {
-  font-size: 1.3em;
-}
-
-p {
-  display: inline;
-  color: #f570ff;
+.here {
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  animation: animate 5s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: none;
 }
 
 ::-webkit-scrollbar {
@@ -267,57 +300,4 @@ p {
   height: 100%;
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(30px);
-}
-
-@media screen and (max-width: 1350px) {
-  .ensemble {
-    flex-direction: column;
-    align-items: center;
-  }
-  .ens-bio {
-    width: 70vw;
-    margin: 0;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1350px) and (max-width: 450px) {
-  #name {
-    display: block;
-    text-align: center;
-    min-width: 6px;
-    color: transparent;
-    text-decoration: none;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-    animation: animate 5s linear infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
-  .ensembles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .ensemble {
-    flex-direction: column;
-    align-items: center;
-  }
-  .ens-name {
-    font-size: 3rem;
-  }
-  .social {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-    animation: animate 5s linear infinite;
-  }
-  .ens-bio {
-    font-size: 1.4rem;
-    padding: 3rem;
-  }
-  .mail {
-    width: 3rem;
-    height: 2rem;
-  }
-  .ig {
-    width: 2rem;
-    height: 2rem;
-  }
 }/*# sourceMappingURL=video-art.css.map */

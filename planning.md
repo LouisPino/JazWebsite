@@ -10,7 +10,3 @@
  - copy footer from index
  - copy header from about
 
-
-# To Do
- - organise all css
-
