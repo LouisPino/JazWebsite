@@ -17,11 +17,15 @@ body {
   flex-direction: column;
 }
 
+.preview-icon {
+  display: none;
+}
+
 .name {
   display: inline;
-  font-size: 3em;
+  font-size: 5rem;
   min-width: 400px;
-  margin-left: 5rem;
+  margin-left: 5.8rem;
 }
 
 nav {
@@ -208,7 +212,6 @@ nav {
   text-align: center;
   font-size: 2em;
   min-width: 500px;
-  border-radius: 1em;
   background-size: contain;
   font-style: italic;
   transition: 250ms;
@@ -461,6 +464,11 @@ p {
     transition: 500ms ease-out;
     opacity: 1;
     font-size: 2.3rem;
+  }
+  .panel:hover > .panel-title {
+    padding-top: 8px;
+    transition: 500ms ease-out;
+    opacity: 1;
   }
   .social {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
