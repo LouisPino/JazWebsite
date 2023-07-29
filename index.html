@@ -64,8 +64,8 @@ xmlns:fb="http://ogp.me/ns/fb#
         id="shape-img"
         src="assets/shapes-transparent.png"
         />
-        <img id="jaz-gif" src="assets/JazGif.gif" />
         <div class="jaz-gif-bg"></div>
+        <img id="jaz-gif" src="assets/JazGif.gif" />
       </div>
     </section>
 
@@ -125,9 +125,27 @@ xmlns:fb="http://ogp.me/ns/fb#
       //frog
       const ribbit = new Audio("assets/Frog-sound-ribbit.mp3");
       const frogImg = document.getElementById("frog");
+      const jazGifBgEl = document.querySelector(".jaz-gif-bg");
+      const jazGifEl = document.querySelector("#jaz-gif");
       const frogText = document.getElementById("frog-text");
+      const brightEl = document.getElementById("bright");
+      const noiseEl = document.getElementById("noise");
+      const loudEl = document.getElementById("loud");
+      const colorsEl = document.getElementById("colors");
       frogImg.addEventListener("click", hop);
+      jazGifEl.addEventListener("click", glow);
+      brightEl.addEventListener("click", glow);
+      noiseEl.addEventListener("click", glow);
+      loudEl.addEventListener("click", glow);
+      colorsEl.addEventListener("click", glow);
       let clickCount = 0;
+
+
+        function glow(e){
+          if(!e.target.classList.value.includes('here')){
+          e.target.classList.add('here')
+         }else{e.target.classList.remove('here')}
+        }
 
       function hop(event) {
         nextPosL = Math.floor(Math.random() * 95) + "%";
@@ -166,7 +184,7 @@ xmlns:fb="http://ogp.me/ns/fb#
         if (clickCount === 20) {
           frogText.innerHTML = frogText.innerHTML = "STOP IT";
         }
-        if (clickCount = 50) {
+        if (clickCount === 50) {
           alert('RESPECT. You have clicked the frog 50 times. Pino and I owe you a beer.')
       }
     }
