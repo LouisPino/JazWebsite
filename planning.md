@@ -8,4 +8,4 @@
 ## Secondaries
 - Hamburger menu all items
 - About page header weird
-- dropdowns fucked when lis are glowing
+- dropdowns fucked
