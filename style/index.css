@@ -65,8 +65,9 @@ p {
 
 #hamburger-div {
   display: none;
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
 
 .hamburger {
@@ -319,8 +320,7 @@ p {
   .dropdown-content {
     width: 100vw;
     font-size: 2.5rem;
-    position: absolute;
-    left: -150px;
+    left: 0;
   }
   .navbar {
     flex-direction: column;
@@ -328,7 +328,8 @@ p {
   }
   #hamburger-div {
     display: block;
-    width: 50px;
+    width: 100vw;
+    margin: 0 auto;
   }
   #hamburger-div .hamburger {
     width: 50px;
