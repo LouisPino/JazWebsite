@@ -10,7 +10,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(24, 24, 24);
+  background: rgb(0, 0, 0);
   color: #f570ff;
   font-family: "Cormorant", serif;
   display: flex;
@@ -402,12 +402,17 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 90vw;
+  }
+  .header {
+    width: 90vw;
   }
   .name {
     display: block;
     font-size: 5rem;
     text-align: center;
     margin: 0;
+    min-width: 0px;
   }
   .tagline {
     display: none;
@@ -416,10 +421,12 @@ p {
     margin: 0;
     height: 90vw;
     background-color: rgb(0, 0, 0);
+    width: 90vw;
+    margin: 0 auto;
   }
   .hero-right {
-    width: 80%;
     margin: 0 auto;
+    width: 100%;
   }
   #jaz-gif {
     width: 90%;
@@ -428,28 +435,32 @@ p {
     width: 90%;
   }
   .panels {
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80vw;
     padding: 0;
+    min-width: 0px;
+    margin: 0 auto;
   }
   .panels a {
     width: 90%;
+    min-width: 0px;
   }
   .panels .panel {
+    box-shadow: inset 0px 0px 300px 50px rgba(0, 0, 0, 0.4);
     padding: 0;
     margin: 0;
-    box-shadow: inset 0px 0px 300px 50px rgba(0, 0, 0, 0.9);
+    margin-top: 20px;
     width: 100%;
-    min-width: 350px;
+    max-height: 200px;
+    min-width: 0px;
   }
   .panel-title {
-    padding-top: 120px;
+    padding-top: 8px;
     transition: 500ms ease-out;
     opacity: 1;
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
   .social {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
@@ -462,5 +473,8 @@ p {
   .ig {
     width: 2rem;
     height: 2rem;
+  }
+  .frog {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */
