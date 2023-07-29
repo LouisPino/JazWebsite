@@ -142,6 +142,7 @@ nav {
   min-width: 400px;
   margin-left: 5em;
   font-size: 2em;
+  margin-top: 0;
 }
 
 .footer {
@@ -209,8 +210,6 @@ p {
   color: #f570ff;
 }
 
-
-
 @media screen and (max-width: 1350px) {
   .ensemble {
     flex-direction: column;
@@ -225,7 +224,7 @@ p {
 }
 
 @media screen and (max-width: 450px) {
-  #name{
+  #name {
     display: block;
     text-align: center;
     min-width: 6px;
@@ -243,7 +242,7 @@ p {
     animation: animate 5s linear infinite;
     background-clip: text;
     -webkit-background-clip: text;
-      }
+  }
   .ensembles {
     display: flex;
     flex-direction: column;
@@ -286,8 +285,6 @@ p {
     height: 2rem;
   }
 }
-
-
 
 //SCROLL BAR
 ::-webkit-scrollbar {

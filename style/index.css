@@ -37,7 +37,7 @@ nav {
   display: inline;
   margin-left: 50px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 nav {
@@ -272,10 +272,10 @@ nav {
 }
 
 .ig {
-  width: 4em;
-  height: 4em;
-  filter: invert(9%);
-  border-radius: 20% ease;
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
   background-color: white;
 }
 
@@ -285,7 +285,8 @@ nav {
 }
 
 .mail {
-  height: 2.1em;
+  margin-bottom: 15px;
+  height: 40px;
 }
 
 .frog {
@@ -473,14 +474,6 @@ p {
   .social {
     background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
     animation: animate 5s linear infinite;
-  }
-  .mail {
-    width: 3rem;
-    height: 2rem;
-  }
-  .ig {
-    width: 2rem;
-    height: 2rem;
   }
   .frog {
     display: none;

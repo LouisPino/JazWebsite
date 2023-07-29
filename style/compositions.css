@@ -145,6 +145,7 @@ nav {
   min-width: 400px;
   margin-left: 5em;
   font-size: 2em;
+  margin-top: 0;
 }
 
 .footer {
@@ -276,6 +277,7 @@ p {
   .ens-bio {
     width: 70vw;
     margin: 0;
+    margin-top: 30px;
     text-align: center;
   }
 }
@@ -290,6 +292,9 @@ p {
     animation: animate 5s linear infinite;
     background-clip: text;
     -webkit-background-clip: text;
+  }
+  .secondary-navs {
+    display: none;
   }
   .ensembles {
     display: flex;
