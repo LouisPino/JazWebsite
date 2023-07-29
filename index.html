@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" 
-xmlns="http://www.w3.org/1999/xhtml"
-xmlns:fb="http://ogp.me/ns/fb#"
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
 >
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +11,7 @@ xmlns:fb="http://ogp.me/ns/fb#"
     <link rel="stylesheet" type="text/css" href="style/index.css" />
     <link rel="icon" href="assets/JazGif.gif" />
     <meta property="og:image" content="assets/JazGif.gif" />
-    <meta property='og:description' content="BRIGHT NOISE, LOUD COLORS"/>
+    <meta property="og:description" content="BRIGHT NOISE, LOUD COLORS" />
   </head>
   <body>
     <!-- Scroll bar -->
@@ -23,6 +24,21 @@ xmlns:fb="http://ogp.me/ns/fb#"
         <div class="name">
           <a class="here" href="index.html">JAZ TSUI</a>
         </div>
+        <div class="dropbtn" id="hamburger-div">
+          <img
+            class="hamburger"
+            src="assets/hamburger-menu-icon-svg-16.jpg"
+            alt=""
+          />
+          <div class="dropdown-content">
+            <a class="here" href="about.html">About</a>
+            <a class="here" href="ensembles.html">Ensembles</a>
+            <a class="here" href="compositions.html">Composition</a>
+            <a class="here" href="multimedia.html">Multimedia</a>
+            <a class="here" href="percussion.html">Percussion</a>
+            <a class="here" href="video-art.html">Video Art</a>
+          </div>
+        </div>
         <nav>
           <ul class="seconday-navs">
             <li class="nav-tab" id="about">
@@ -31,13 +47,15 @@ xmlns:fb="http://ogp.me/ns/fb#"
             <li class="nav-tab" id="ensembles">
               <a class="link" href="ensembles.html">ENSEMBLES</a>
             </li>
-            <li class="dropbtn works nav-tab">WORKS</button>
-            <div class="dropdown-content">
-              <a class="link" href="compositions.html">Composition</a>
-              <a class="link" href="multimedia.html">Multimedia</a>
-              <a class="link" href="percussion.html">Percussion</a>
-              <a class="link" href="video-art.html">Video Art</a>
-            </div>
+            <li class="dropbtn works nav-tab">
+              WORKS
+              <div class="dropdown-content">
+                <a class="link" href="compositions.html">Composition</a>
+                <a class="link" href="multimedia.html">Multimedia</a>
+                <a class="link" href="percussion.html">Percussion</a>
+                <a class="link" href="video-art.html">Video Art</a>
+              </div>
+            </li>
           </ul>
         </nav>
       </section>
@@ -60,10 +78,7 @@ xmlns:fb="http://ogp.me/ns/fb#"
         </h2>
       </div>
       <div class="hero-right">
-        <img
-        id="shape-img"
-        src="assets/shapes-transparent.png"
-        />
+        <img id="shape-img" src="assets/shapes-transparent.png" />
         <div class="jaz-gif-bg"></div>
         <img id="jaz-gif" src="assets/JazGif.gif" />
       </div>
@@ -102,15 +117,13 @@ xmlns:fb="http://ogp.me/ns/fb#"
         <a href="mailto:jasmine.j.tsui@gmail.com" target="_blank">
           <img
             src="assets/Jaz Tsui_files/3kont8jsnkkjm5cf18nbi6f6gc.png"
-            class="social clickable mail link"
+            class="social clickable mail"
         /></a>
       </div>
       <div class="footer-text here">Website by Jaz Tsui and Louis Pino</div>
     </section>
 
-    <a href="#"
-      ><img src="assets/frog.png" alt="" class="frog" id="frog"
-    /></a>
+    <a href="#"><img src="assets/frog.png" alt="" class="frog" id="frog" /></a>
     <p id="frog-text" class="frog">DO NOT CLICK ME</p>
 
     <script type="text/javascript">
@@ -132,21 +145,32 @@ xmlns:fb="http://ogp.me/ns/fb#"
       const noiseEl = document.getElementById("noise");
       const loudEl = document.getElementById("loud");
       const colorsEl = document.getElementById("colors");
+      const hamburgerEl = document.querySelector(".hamburger");
+      const dropbtnContentEl = document.querySelector(".dropdown-content");
       frogImg.addEventListener("click", hop);
       jazGifEl.addEventListener("click", glow);
       brightEl.addEventListener("click", glow);
       noiseEl.addEventListener("click", glow);
       loudEl.addEventListener("click", glow);
       colorsEl.addEventListener("click", glow);
+      hamburgerEl.addEventListener("click", showBurger);
       let clickCount = 0;
 
-
-        function glow(e){
-          if(!e.target.classList.value.includes('here')){
-          e.target.classList.add('here')
-         }else{e.target.classList.remove('here')}
+      function glow(e) {
+        if (!e.target.classList.value.includes("here")) {
+          e.target.classList.add("here");
+        } else {
+          e.target.classList.remove("here");
         }
+      }
 
+
+      function showBurger(){
+        console.log(dropbtnContentEl.style.display)
+        if(dropbtnContentEl.style.display === 'block'){
+          dropbtnContentEl.style.display = 'none'
+        }else{dropbtnContentEl.style.display = 'block'}
+      }
       function hop(event) {
         nextPosL = Math.floor(Math.random() * 95) + "%";
         nextPosT = Math.floor(Math.random() * 200) + "%";
@@ -156,19 +180,25 @@ xmlns:fb="http://ogp.me/ns/fb#"
         frogText.style.top = nextPosT;
         ribbit.play();
         clickCount++;
-  
+
         if (clickCount === 1) frogText.innerHTML = "I TOLD YOU NOT TO DO THAT";
         if (clickCount === 2) frogText.innerHTML = "STOP TOUCHING ME YOU FREAK";
         if (clickCount === 3) frogText.innerHTML = "WHY DO YOU NOT RESPECT ME";
         if (clickCount === 4)
           frogText.innerHTML = "MY WRATH WILL BE YOUR DOWNFALL";
-        if (clickCount === 5){
-        frogText.innerHTML = "...what";
-        frogImg.classList.add('here')
-      }
-        if(clickCount === 6){frogText.innerHTML = 'This cannot be good for my health'}
-        if(clickCount === 7){frogText.innerHTML = "I guess I'm just like this now"}
-        if(clickCount === 8){frogText.innerHTML = "So you can stop clicking me"}
+        if (clickCount === 5) {
+          frogText.innerHTML = "...what";
+          frogImg.classList.add("here");
+        }
+        if (clickCount === 6) {
+          frogText.innerHTML = "This cannot be good for my health";
+        }
+        if (clickCount === 7) {
+          frogText.innerHTML = "I guess I'm just like this now";
+        }
+        if (clickCount === 8) {
+          frogText.innerHTML = "So you can stop clicking me";
+        }
         if (clickCount === 9) {
           frogText.innerHTML = frogText.innerHTML = "";
         }
@@ -185,9 +215,11 @@ xmlns:fb="http://ogp.me/ns/fb#"
           frogText.innerHTML = frogText.innerHTML = "STOP IT";
         }
         if (clickCount === 50) {
-          alert('RESPECT. You have clicked the frog 50 times. Pino and I owe you a beer.')
+          alert(
+            "RESPECT. You have clicked the frog 50 times. Pino and I owe you a beer."
+          );
+        }
       }
-    }
     </script>
   </body>
 </html>
