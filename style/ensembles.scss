@@ -53,7 +53,6 @@ p {
 
 .name {
   font-size: 5em;
-  margin-left: -50px;
 }
 
 .nav-tab {
@@ -62,6 +61,17 @@ p {
   margin-right: 2rem;
   font-size: 2em;
   margin-left: 50px;
+}
+
+#hamburger-div {
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.hamburger {
+  max-width: 50px;
+  max-height: 50px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -142,6 +152,7 @@ p {
   height: 70px;
   margin: 0;
   padding: 0;
+  border-radius: 0%;
   background-color: white;
 }
 
@@ -172,37 +183,58 @@ p {
     margin-top: 40px;
     text-align: center;
   }
+  nav{margin: 0;
+  right: 0px}
+
+  .navbar{margin-right: 0;}
+
+  .nav-tab{
+    margin: 10px;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
+  .name {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    min-width: 6px;
+  }
   nav {
     display: none;
   }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropbtn {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .dropdown-content {
+    width: 100vw;
+    font-size: 2.5rem;
+    left: 0;
+  }
+
+
+  #hamburger-div {
+    display: block;
+    width: 100vw;
+
+    .hamburger {
+      width: 50px;
+    }
   .name {
     margin: 0 auto;
     text-align: center;
   }
 }
+}
 @media screen and (max-width: 450px) {
-  #name {
-    display: block;
-    text-align: center;
-    min-width: 6px;
-    color: transparent;
-    text-decoration: none;
-    background: linear-gradient(
-      90deg,
-      red,
-      orange,
-      yellow,
-      green,
-      blue,
-      purple
-    );
-    animation: animate 5s linear infinite;
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
+
   .ensembles {
     display: flex;
     flex-direction: column;
@@ -212,6 +244,7 @@ p {
     flex-direction: column;
     align-items: center;
   }
+
 
   .ens-name {
     font-size: 3rem;
@@ -235,15 +268,6 @@ p {
     padding: 3rem;
   }
 
-  .mail {
-    width: 3rem;
-    height: 2rem;
-  }
-
-  .ig {
-    width: 2rem;
-    height: 2rem;
-  }
 }
 
 //////////////////////////////////////////////////////////////////////Scroll Bar///////////
