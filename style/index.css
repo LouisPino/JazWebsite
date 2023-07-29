@@ -176,6 +176,7 @@ nav {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  box-shadow: #008aff;
 }
 
 .panels {
@@ -282,6 +283,7 @@ nav {
   padding: 0;
   max-height: 30px;
   text-align: center;
+  text-shadow: rgb(0, 255, 26) 0px 0px 8px;
 }
 
 section {

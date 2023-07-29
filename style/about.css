@@ -244,14 +244,36 @@ body {
   filter: blur(30px);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
   .hero {
     flex-direction: column;
+    align-items: center;
   }
   .bio {
-    margin: 4rem auto;
+    margin: 2rem;
+    text-align: center;
+    width: 80%;
   }
   #final-form {
     margin: 0 auto;
+    height: 40%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .social {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
+  }
+  .bio {
+    font-size: 1.4rem;
+  }
+  .mail {
+    width: 3rem;
+    height: 2rem;
+  }
+  .ig {
+    width: 2rem;
+    height: 2rem;
   }
 }/*# sourceMappingURL=about.css.map */
