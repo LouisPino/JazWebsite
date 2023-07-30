@@ -173,20 +173,9 @@ body {
   .bio {
     font-size: 1rem;
   }
+
 }
 
-.social {
-  background: linear-gradient(
-    90deg,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    purple
-  );
-  animation: animate 5s linear infinite;
-}
 
 
 @media screen and (max-width: 1450px) {
@@ -204,6 +193,11 @@ body {
     height: 40vmin;
     width: 40vmin;
   }
+  .nav-tab{margin-left: 10px}
+}
+
+@media screen and (max-width: 1150px) {
+  .navbar{margin: 50px 0}
 }
 
 @media screen and (max-width: 900px) {
@@ -215,7 +209,10 @@ body {
   }
   nav {
     display: none;
+  
   }
+
+
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -231,19 +228,6 @@ body {
     font-size: 2.5rem;
     left: 0;
   }
-
-
-  #hamburger-div {
-    display: block;
-    width: 100vw;
-
-    .hamburger {
-      width: 50px;
-    }
-  }
-
-
-
   .social {
     background: linear-gradient(
       90deg,
@@ -255,6 +239,15 @@ body {
       purple
     );
     animation: animate 5s linear infinite;
+  }
+
+  #hamburger-div {
+    display: block;
+    width: 100vw;
+
+    .hamburger {
+      width: 50px;
+    }
   }
 
   .bio {

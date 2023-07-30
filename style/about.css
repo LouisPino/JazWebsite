@@ -159,11 +159,6 @@ body {
     font-size: 1rem;
   }
 }
-.social {
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  animation: animate 5s linear infinite;
-}
-
 @media screen and (max-width: 1450px) {
   .hero {
     flex-direction: column;
@@ -178,6 +173,14 @@ body {
     margin: 0 auto;
     height: 40vmin;
     width: 40vmin;
+  }
+  .nav-tab {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .navbar {
+    margin: 50px 0;
   }
 }
 @media screen and (max-width: 900px) {
@@ -204,16 +207,16 @@ body {
     font-size: 2.5rem;
     left: 0;
   }
+  .social {
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    animation: animate 5s linear infinite;
+  }
   #hamburger-div {
     display: block;
     width: 100vw;
   }
   #hamburger-div .hamburger {
     width: 50px;
-  }
-  .social {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-    animation: animate 5s linear infinite;
   }
   .bio {
     font-size: 1.4rem;
