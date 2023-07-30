@@ -23,6 +23,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 50px 100px;
+  margin-left: 50px;
 }
 
 .secondary-navs {
