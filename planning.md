@@ -1,8 +1,6 @@
 ## Main page
-### panel titles fucked
 
 ## Secondaries
-- Hamburger menu all items
 - flower and crying face
 
 ### to do
