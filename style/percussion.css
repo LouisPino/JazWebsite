@@ -148,6 +148,10 @@ nav {
   margin-top: 0;
 }
 
+iframe {
+  margin: 0 auto;
+}
+
 .footer {
   display: grid;
   justify-content: center;

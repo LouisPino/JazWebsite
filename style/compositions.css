@@ -98,6 +98,10 @@ nav {
   margin: 0 auto;
 }
 
+iframe {
+  margin: 0 auto;
+}
+
 .ensembles {
   display: flex;
   flex-direction: column;
