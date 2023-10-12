@@ -11,7 +11,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(24, 24, 24);
   background-size: cover;
   color: #f570ff;
   font-family: "Cormorant", serif;
@@ -150,12 +150,10 @@ p {
 }
 
 .ig {
-  width: 70px;
-  height: 70px;
-  margin: 0;
-  padding: 0;
-  border-radius: 0%;
-  background-color: white;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 20%;
+  background-color: rgb(24, 24, 24);
 }
 
 .social:hover {

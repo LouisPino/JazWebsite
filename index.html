@@ -17,7 +17,6 @@
     <!-- Scroll bar -->
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
-
     <!-- Nav Bar -->
     <div class="navcon">
       <section class="navbar">
@@ -74,11 +73,11 @@
           <a href="#" class="link tagline-link">LOUD</a>
         </h2>
         <h2 class="tag-line" id="colors">
-          <a href="#" class="link tagline-link">COLORS</a>
+          <a href="#" class="link tagline-link">COLOR</a>
         </h2>
       </div>
       <div class="hero-right">
-        <img id="shape-img" src="assets/shapes-transparent.png" />
+        <!-- <img id="shape-img" src="assets/shapes-transparent.png" /> -->
         <div class="jaz-gif-bg"></div>
         <img id="jaz-gif" src="assets/JazGif.gif" />
       </div>
@@ -134,7 +133,7 @@
         let progressHeight = (window.pageYOffset / totalHeight) * 100;
         progress.style.height = progressHeight + "%";
       };
-
+      
       //frog
       const ribbit = new Audio("assets/Frog-sound-ribbit.mp3");
       const frogImg = document.getElementById("frog");
@@ -231,4 +230,5 @@
 <!--
 get rid of link preview  on tagline
 fix autoscroll
+sync icons and styles
 -->
